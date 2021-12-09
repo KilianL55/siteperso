@@ -1,0 +1,18 @@
+stage1:
+   poste: "Poste : Vendeur d'électromanger"
+   entreprise: "Entrepise : Beaudoux"
+   date: "Le stage a eu lieu en 2018"
+   lieu: "Le stage a eu lieu à Courseulles sur mer"
+   descriptif: "Descriptif : Stage d'observation durant lequel j'ai pu observer la gestion d'un stock de magasin, le déroulement d'un vente en électroménager, interventions à domicile pour l'installation d'appareil éléctroménager"
+stage2:
+   poste: "Poste : Technicien Informatique / Administrateur réseau"
+   entreprise: "Entreprise : Service et Déploiement de Proximité de Pôle Emploi"
+   date: "Date : Le stage a eu lieu en 2019"
+   lieu: "Lieu : Le stage a eu lieu à Caen"
+   descriptif: "Descriptif : stage d'observation effectué en seconde, durant lequel j'ai pu observer plusieurs faces du métier d'informaticien. J'ai pu observé du support à distance système et logiciel informatique, la gestion d'un parc informatique, gestion de serveur, développement applicatif et web"
+stage3:
+   poste: "Poste : Caissier dans la grande distribution"
+   entreprise: "Entreprise : Carrefour market"
+   date: "Data : la période de travail a commencé en septembre et continue toujours"
+   lieu: "Lieu : le magasin se trouve à Courseulle sur mer"
+   descriptif: "Descriptif : Emploi étudiant durant lequel j'exerce le métier de caissier"
