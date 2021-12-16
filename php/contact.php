@@ -24,9 +24,10 @@ echo'</main>';
 
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
+
+include_once 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 
 if (isset ($_POST['g-recaptcha-response']) &&! empty ($_POST ['g-recaptcha-response'])) {
     $secret = '6LfvfqEdAAAAAIBOm4H53eadcCFfQzWjCxKveaH4'; 
@@ -37,8 +38,6 @@ if (isset ($_POST['g-recaptcha-response']) &&! empty ($_POST ['g-recaptcha-respo
 
     if( !empty($_POST)){
 
-        include_once 'vendor/autoload.php';
-        use PHPMailer\PHPMailer\PHPMailer;
 
 
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
