@@ -12,4 +12,7 @@
     echo "<div class='ac1'>";
         echo '<h1>'.$data['presentation'].'</h1>';
     echo "</div>";
+    echo "<div class='ac1'>";
+        echo '<h1>'.$data['activite'].'</h1>';
+    echo "</div>";
 echo "</main>";
