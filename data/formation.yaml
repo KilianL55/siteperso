@@ -1,0 +1,18 @@
+1:
+   nom: "Nom : Brevet des collèges"
+   etablissement: "Etablissement : Collège Quintefeuille "
+   date: "Date : 2017-2018"
+   lieu: "Lieu : Courseulles sur mer"
+   descriptif: "Brevet des collèges, obtenu avec mention bien"
+2:
+   nom: "Nom : Baccalauréat général "
+   etablissement: "Etablissement : Lycée Sainte Marie"
+   date: "Date : 2020-2021"
+   lieu: "Lieu : Caen"
+   descriptif: "Descriptif : Baccalauréat général spécialité mathématiques et numériques sciences de l'informatique obtenu avec mention assez bien"
+3:
+   nom: "Nom : BTS Service Informatique aux Organisations"
+   etablissement: "Entrepise : Supavenir Saint Ursule"
+   date: "Date : 2021"
+   lieu: "Lieu : Caen"
+   descriptif: "Descriptif : BTS Services Informatique aux Organisations spécialités SLAM."

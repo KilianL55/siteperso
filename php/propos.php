@@ -2,18 +2,14 @@
  $content=\file_get_contents('data/propos.yaml');
  $data=yaml_parse($content);
 
-
- foreach($data as $cle=>$val){
-    if($cle == 'accroche'){
-        echo"<div class='prop1'>";
-        echo"<h2>".$val."</h2>";
-        echo'<img src="images/pppp.png"/>';
-        echo"</div>";
-    }
-    if($cle == 'presentation'){
-        echo"<div class='prop2'>";
-        echo"<p>".$val;
-        echo"</div>";
-    }
- }
- 
+ echo "<main class='ac3'>";
+    echo "<div class='ac'>";
+        echo '<h1>'.$data['nom'].'</h1>';
+    echo "</div>";
+    echo "<div class='ac1'>";
+        echo '<img src='.$data['photo'].'>';
+    echo "</div>";
+    echo "<div class='ac1'>";
+        echo '<h1>'.$data['presentation'].'</h1>';
+    echo "</div>";
+echo "</main>";

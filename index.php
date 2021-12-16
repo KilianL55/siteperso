@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <?php
         include('php/nav.php');
         
