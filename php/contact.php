@@ -49,7 +49,7 @@ if (isset ($_POST['g-recaptcha-response']) &&! empty ($_POST ['g-recaptcha-respo
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'kilianlevasseur5@gmail.com';             // SMTP username
             $mail->Password = 'fccnfoot';                           // SMTP password
-            $mail->SMTPSecure = 'tls';                            // Enable SSL encryption, TLS also accepted with port 465
+            $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption, TLS also accepted with port 465
             $mail->Port = 465;                                    // TCP port to connect to
 
             //Recipients
@@ -61,7 +61,7 @@ if (isset ($_POST['g-recaptcha-response']) &&! empty ($_POST ['g-recaptcha-respo
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             $mail->send();
-            echo '<div><h2>Votre message à bien était envoyé</h2></div>';
+            echo '<div><h2>Votre message à bien été envoyé</h2></div>';
         } catch (Exception $e) {
             echo 'Votre message à pas pu être envoyé.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
