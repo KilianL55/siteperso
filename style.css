@@ -302,6 +302,13 @@ justify-content: center;
 margin-top: 5%;
 text-align: center;
 }
+
+input{
+  padding-right: 15px;
+}
+form p{
+  padding: 5px;
+}
 /* background */
 
 .container{
