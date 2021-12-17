@@ -13,6 +13,7 @@
         
         $content=\file_get_contents('data/nav.yaml');
         $data=yaml_parse($content);
+        $data=array_reverse($data);
         ?>
         <?php
         foreach($data as $cle=>$val){

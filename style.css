@@ -7,18 +7,26 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
- 
 }
 
 section{
-    z-index: 2;
-    display: none;
+  z-index: 2;
+  display: none;
+}
+
+#accueil{
+  z-index: 2;
+  display: block;
 }
 
 section:target{
     z-index: 2;
     display:block;
     height: 100vh;
+}
+
+section:not(:target), section:target ~ #accueil {
+    display: none;
 }
 
 /* barre de navigation */
@@ -30,25 +38,25 @@ nav{
     background-color: #ffffff;
     margin-top: 0px;
     border: solid 4px #0591ee;
-    height: 7%;
+    height: 70px;
     padding: 0 7px;
     box-shadow: 4px 4px 15px -7px #000000;
-    position: absolute;
     top : 0;
     width: 100%;
+    position: absolute;
 }
 
-a{
-    text-decoration:none !important;
-    color : black;
-    padding: 5px;
-    position: relative;
-    transition-duration: 1s;
-    border : solid 1px #585858;
+nav a{
+  text-decoration:none !important;
+  color : black;
+  padding: 5px;
+  position: relative;
+  transition-duration: 1s;
+  border : solid 1px #585858;
 
 }
 
-a:hover {
+nav a:hover {
     border-color : #444655;
     background-color: #0591ee; 
     color: #ffffff;
@@ -57,62 +65,53 @@ a:hover {
 /* page accueil */
 
 .ac h1 {
-    text-align: center;
-    
+  text-align: center;    
 }
 
 .ac3{
-
-  margin-top: 10%;
+  margin-top: 7%;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  direction: column;
   align-items: center;
-  max-width: 50%;
+  width: 50%;
+  margin: auto;
+  padding-top: 10%;
 }
+
 .ac1{
-    margin-top: 2%;
-    padding: 5px;
-    text-align: center;
-    color : black;
+  z-index: 2;
+  margin-top: 2%;
+  padding: 5px;
+  text-align: center;
+  color : black;
 }
-
-#accueil:target{
-    z-index: 2;
-    display : flex;
-    justify-content: center;
-}
-
 
 /* page propos */
 
+
 .prop1{
-    z-index: 2;
-    width: 200px;
-    margin-top: 50px;
-    text-align: center;
-    border-radius: 10px;
-    border : 2px solid #0591ee;
-    color : #ffffff;
+  margin-top: 2%;
+  padding: 5px;
+  text-align: center;
+  color : black;
+  margin-bottom: 20px;
+  
 }
 
-.prop2{
-    z-index: 2;
-    background-color: #585858;
-    width: 500px;
-    margin-top: 50px;
-    text-align: center;
-    border-radius: 10px;
-    border : 2px solid #0591ee;
-    margin-left: 10px;
-    color : #ffffff;
-    font-size: 150%;
+.prop3{
+  margin-top: 7%;
+  z-index: 2;
+  display: block;
+  direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 10%;
+  height: 1000px;
 }
-
-#propos:target{
-z-index: 2;
-display : flex;
-justify-content: center;
+#propos a {
+  text-align: center;
 }
 
 /* page expèrience */
@@ -171,7 +170,7 @@ justify-content: center;
 
 /* competence */
 
-.wrappercp{
+ .wrappercp{
   margin-top: 30px;
   z-index: 2;
   display: flex;
@@ -184,7 +183,7 @@ justify-content: center;
 .topc{
   z-index: 2;
   height: 50%;
-}
+} 
 
 .competence1{
   display: flex;
@@ -309,6 +308,7 @@ input{
 form p{
   padding: 5px;
 }
+
 /* background */
 
 .container{
@@ -443,7 +443,7 @@ form p{
   bottom: 0;
   right: 450px;
   animation: MoveUpDownTen 10s linear infinite;
-}
+} */
 
 @keyframes a-one {
   from { top: 0; left: 0; }
@@ -455,7 +455,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 700px;
+    bottom: 71%;
   }
 }
 
@@ -464,7 +464,7 @@ form p{
     left: 0;
   }
   50% {
-    bottom: 650px;
+    bottom: 66%;
   }
 }
 
@@ -473,7 +473,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 660px;
+    bottom: 67%;
   }
 }
 
@@ -482,7 +482,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 640px;
+    bottom: 65%;
   }
 }
 
@@ -491,7 +491,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 610px;
+    bottom: 62%;
   }
 }
 
@@ -500,7 +500,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 675px;
+    bottom: 68.5%;
   }
 }
 
@@ -509,7 +509,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 600px;
+    bottom: 61%;
   }
 }
 
@@ -518,7 +518,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 680px;
+    bottom: 69%;
   }
 }
 
@@ -527,7 +527,7 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 655px;
+    bottom: 66.5%;
   }
 }
 
@@ -536,6 +536,6 @@ form p{
     bottom: 0;
   }
   50% {
-    bottom: 645px;
+    bottom: 65.5%;
   }
-}
+} 
