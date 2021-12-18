@@ -18,6 +18,7 @@ foreach($data as $index=>$stage){
         echo'</div>';
     echo'</div>';
 }
+echo '<a href="data/CV.pdf">Mon CV</a>';
 echo '</div>';
 
 ?>

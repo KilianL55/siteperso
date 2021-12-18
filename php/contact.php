@@ -47,8 +47,8 @@ if (isset ($_POST['g-recaptcha-response']) &&! empty ($_POST ['g-recaptcha-respo
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'kilianlevasseur5@gmail.com';             // SMTP username
-            $mail->Password = 'fccnfoot';                           // SMTP password
+            $mail->Username = 'levasseurkilianmail@gmail.com';             // SMTP username
+            $mail->Password = 'a1q2w3z4s5x6e7d8c9';                           // SMTP password
             $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption, TLS also accepted with port 465
             $mail->Port = 465;                                    // TCP port to connect to
 

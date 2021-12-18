@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 
 /* structure des pages du site */
+body{
+  background-image: radial-gradient(circle at 37.72% -19.64%, #32ccff 0, #3cb5f2 50%, #409ed4 100%);
+}
+
 *{
-    margin : 0px;
-    padding : 0px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+  margin : 0px;
+  padding : 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
 section{
-  z-index: 2;
   display: none;
 }
 
 #accueil{
-  z-index: 2;
   display: block;
 }
 
 section:target{
-    z-index: 2;
-    display:block;
-    height: 100vh;
+  display:block;
+  height: 100vh;
 }
 
 section:not(:target), section:target ~ #accueil {
@@ -30,20 +31,20 @@ section:not(:target), section:target ~ #accueil {
 }
 
 /* barre de navigation */
+
 nav{
-    z-index : 3;
-    display : flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    margin-top: 0px;
-    border: solid 4px #0591ee;
-    height: 70px;
-    padding: 0 7px;
-    box-shadow: 4px 4px 15px -7px #000000;
-    top : 0;
-    width: 100%;
-    position: absolute;
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin-top: 0px;
+  border: solid 4px #0591ee;
+  height: 70px;
+  padding: 0 7px;
+  box-shadow: 4px 4px 15px -7px #000000;
+  top : 0;
+  width: 100%;
+  position: absolute;
 }
 
 nav a{
@@ -51,26 +52,25 @@ nav a{
   color : black;
   padding: 5px;
   position: relative;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   border : solid 1px #585858;
-
 }
 
 nav a:hover {
-    border-color : #444655;
-    background-color: #0591ee; 
-    color: #ffffff;
+  border-color : #444655;
+  background-color: #0591ee; 
+  color: #ffffff;
 }
 
 /* page accueil */
 
 .ac h1 {
-  text-align: center;    
+  text-align: center;
+  color :#ffffff;    
 }
 
 .ac3{
   margin-top: 7%;
-  z-index: 2;
   display: block;
   direction: column;
   align-items: center;
@@ -80,11 +80,10 @@ nav a:hover {
 }
 
 .ac1{
-  z-index: 2;
   margin-top: 2%;
   padding: 5px;
   text-align: center;
-  color : black;
+  color : #ffffff;
 }
 
 /* page propos */
@@ -94,85 +93,89 @@ nav a:hover {
   margin-top: 2%;
   padding: 5px;
   text-align: center;
-  color : black;
+  color : #ffffff;
   margin-bottom: 20px;
-  
+  font-size: 18px;
 }
 
 .prop3{
   margin-top: 7%;
-  z-index: 2;
-  display: block;
-  direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 50%;
   margin: auto;
   padding-top: 10%;
-  height: 1000px;
-}
-#propos a {
-  text-align: center;
 }
 
+#propos a {
+  text-align: center;
+  text-decoration:none ;
+  color: #ffffff;
+  transition-duration: 0.1s;
+
+
+}
+#propos a:hover {
+  text-align: center;
+  text-decoration:none ;
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
 /* page expèrience */
 
 .stage1{
-    z-index: 2;
-    background-color: #ffffff;
-    border : 2px solid #0591ee;
-    width: 60%;
-    height: 30%;
-    border-radius: 10px;
-    color : black;
-    padding: 5px;
-    box-shadow: 4px 4px 15px -7px #000000;
+  background-color: #ffffff;
+  border : 2px solid #0591ee;
+  width: 60%;
+  height: 30%;
+  border-radius: 10px;
+  color : black;
+  padding: 5px;
+  box-shadow: 4px 4px 15px -7px #000000;
 }
 
 .stage1 p{
-    line-height: 25px;
+  line-height: 25px;
 }
 
 .buttonexp{
   margin-top: 20px;
-    z-index: 2;
-    text-align: center;
-    background-color: #ffffff;
-    border : 2px solid #0591ee;
-    width: 15%;
-    padding: 5px;
-    border-radius: 10px;
-    color : black;
-    box-shadow: 4px 4px 15px -7px #000000;
-    align-items: center;
-    margin-bottom: 30px; 
+  text-align: center;
+  background-color: #ffffff;
+  border : 2px solid #0591ee;
+  width: 15%;
+  padding: 5px;
+  border-radius: 10px;
+  color : black;
+  box-shadow: 4px 4px 15px -7px #000000;
+  align-items: center;
+  margin-bottom: 30px; 
 }
 
 .top{
-    width: 80%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1%;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
 }
 
 
 .wrapperexp{
-    margin-top: 3%;
-    z-index: 2;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-height: 1080px;
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 1080px;
 }
 
 /* competence */
-
- .wrappercp{
+.wrappercp{
   margin-top: 30px;
-  z-index: 2;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -180,18 +183,11 @@ nav a:hover {
   align-items: center;
 }
 
-.topc{
-  z-index: 2;
-  height: 50%;
-} 
-
 .competence1{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
-  margin-top: 85px;
+  margin-top: 75px;
   background-color: #ffffff;
   border : 2px solid #0591ee;
   width: 50vw;
@@ -199,6 +195,7 @@ nav a:hover {
   color : black;
   padding-bottom: 15px;
   box-shadow: 4px 4px 15px -7px #000000;
+  margin-bottom: 10px;
 }
 
 .barre {
@@ -218,7 +215,6 @@ nav a:hover {
 }
 
 .buttoncp{
-  z-index: 2;
   text-align: center;
   width: 180px;
   padding: 5px;
@@ -279,10 +275,21 @@ nav a:hover {
   width: 45%;
 }
 
+#competence a {
+  text-align: center;
+  text-decoration:none ;
+  color: #ffffff;
+  transition-duration: 0.1s;
+}
+#competence a:hover {
+  text-align: center;
+  text-decoration:none ;
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
 /* contact */
 
 .contact2{
-  z-index: 2;
   border : 2px solid #0591ee;
   border-radius: 10px;
   background-color: #ffffff;
@@ -294,9 +301,6 @@ nav a:hover {
   text-align: center;
 }
 
-.contact:target{
-  display: block;
-}
 .contact div h2{
 margin-top: 5%;
 text-align: center;
@@ -308,234 +312,3 @@ input{
 form p{
   padding: 5px;
 }
-
-/* background */
-
-.container{
-    z-index : 1;
-}
-
-.col-md-12 {
-    background: #f1f1f1;
-    margin-top: 50px;
-    overflow: hidden;
-    z-index : 1
-}
-
-.a-one {
-  z-index : 1;
-  width: 100px;
-  height: 100px;
-  background-color: #0b9fe4;
-  opacity: 0.5;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 150px;
-  animation: MoveUpDown 5s linear infinite;
-}
-
-.a-two {
-  width: 150px;
-  height: 150px;
-  background-color: #24a4ee;
-  opacity: 0.7;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 10px;
-  left: 200px;
-  animation: MoveUpDownTwo 9s linear infinite;
-}
-
-.a-three {
-  width: 120px;
-  height: 120px;
-  background-color: #0393cc;
-  opacity: 0.2;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 120px;
-  left: 300px;
-  animation: MoveUpDownThree 5s linear infinite;
-}
-
-.a-four {
-  width: 80px;
-  height: 80px;
-  background-color: #197af8;
-  opacity: 0.4;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: MoveUpDownFour 15s linear infinite;
-}
-
-.a-five {
-  width: 50px;
-  height: 50px;
-  background-color: #0395e9;
-  opacity: 0.9;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 200px;
-  right: 0;
-  animation: MoveUpDownFive 8s linear infinite;
-}
-
-.a-six {
-  width: 175px;
-  height: 175px;
-  background-color: #20a3ee;
-  opacity: 0.6;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 250px;
-  right: 200px;
-  animation: MoveUpDownSix 7s linear infinite;
-}
-
-.a-seven {
-  z-index : 1;
-  width: 250px;
-  height: 250px;
-  background-color: #028be69e;
-  opacity: 0.3;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 450px;
-  right: 0;
-  animation: MoveUpDownSeven 6s linear infinite;
-}
-
-.a-eight {
-  width: 75px;
-  height: 75px;
-  background-color: #2699f7;
-  opacity: 0.4;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 350px;
-  animation: MoveUpDownEight 11s linear infinite;
-}
-
-.a-nine {
-  width: 45px;
-  height: 45px;
-  background-color: #0185dd;
-  opacity: 0.7;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 450px;
-  animation: MoveUpDownNine 12s linear infinite;
-}
-
-.a-ten {
-  width: 150px;
-  height: 150px;
-  background-color: #0791c7;
-  opacity: 0.6;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 450px;
-  animation: MoveUpDownTen 10s linear infinite;
-} */
-
-@keyframes a-one {
-  from { top: 0; left: 0; }
-  to   { top: 100px; left: 100px; }
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 71%;
-  }
-}
-
-@keyframes MoveUpDownTwo {
-  0%, 100% {
-    left: 0;
-  }
-  50% {
-    bottom: 66%;
-  }
-}
-
-@keyframes MoveUpDownThree {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 67%;
-  }
-}
-
-@keyframes MoveUpDownFour {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 65%;
-  }
-}
-
-@keyframes MoveUpDownFive {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 62%;
-  }
-}
-
-@keyframes MoveUpDownSix {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 68.5%;
-  }
-}
-
-@keyframes MoveUpDownSeven {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 61%;
-  }
-}
-
-@keyframes MoveUpDownEight {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 69%;
-  }
-}
-
-@keyframes MoveUpDownNine {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 66.5%;
-  }
-}
-
-@keyframes MoveUpDownTen {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 65.5%;
-  }
-} 
