@@ -8,7 +8,7 @@ echo '<main class="wrappercp">';
         echo '<h2>'.$data['titre'].'</h2>';
         echo'<form action="index.php#contact" method="post">';
             echo'<p>'.$data['nom'].'</p>';
-            echo'<input class="champ2" type="text" name="nom" placeholder="Entrez votre nom de famille">';
+            echo'<input class="champ2" type="text" name="nom" placeholder="Entrez votre nom">';
             echo'<p>'.$data['mail'].'</p>';
             echo '<input class="champ2" type="email" name="mail" placeholder="Entrez l\'email ">';
             echo '<p>'.$data['objet'].'</p>';
