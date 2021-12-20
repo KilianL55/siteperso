@@ -52,16 +52,13 @@ nav a{
   color : black;
   padding: 5px;
   position: relative;
-  transition-duration: 0.5s;
-  border : solid 1px #585858;
+  transition-duration: 0.1s;
 }
 
 nav a:hover {
-  border-color : #444655;
-  background-color: #0591ee; 
-  color: #ffffff;
+  border-bottom: solid 3px #0591ee;
+  border-radius: 3px;
 }
-
 /* page accueil */
 
 .ac h1 {
@@ -113,15 +110,15 @@ nav a:hover {
   text-decoration:none ;
   color: #ffffff;
   transition-duration: 0.1s;
-
-
 }
+
 #propos a:hover {
   text-align: center;
   text-decoration:none ;
   color: #ffffff;
   border-bottom: solid 2px #ffffff;
 }
+
 /* page expèrience */
 
 .stage1{

@@ -19,7 +19,6 @@
         foreach($data as $cle=>$val){
             echo '<section id="'.$cle.'"class="'.$cle.'">';
             include ('php/'.$cle.'.php');
-            include('php/background.php');
             echo'</section>';
         }
         ?>
